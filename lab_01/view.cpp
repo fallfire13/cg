@@ -187,12 +187,9 @@ void draw_func(View *v) {
         p4 = {v->x_center + x * v->step_x/ v->set_x, v->y_center + sqrt((pow(x, 2) * (v->pan->set_a() - x ) / (v->pan->set_a() + x))) * v->step_y / v->set_y };
         ptr.drawLine(p3, p4);
         p3 = p4;
-
         p6 = {v->x_center - x * v->step_x/ v->set_x, v->y_center + sqrt((pow(x, 2) * (v->pan->set_a() + x ) / (v->pan->set_a() - x))) * v->step_y / v->set_y };
         ptr.drawLine(p5, p6);
         p5 = p6;
-
-
         p8 = {v->x_center - x * v->step_x/ v->set_x, v->y_center - sqrt((pow(x, 2) * (v->pan->set_a() + x ) / (v->pan->set_a() - x))) * v->step_y / v->set_y };
         ptr.drawLine(p7, p8);
         p7 = p8;
